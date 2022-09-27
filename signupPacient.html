@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!--  Favicon -->   
+   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+   <title>Pacient - Sign Up</title>
+
+   <script src="./scripts/loader.js" defer></script>
+
+   <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+   <link rel="stylesheet" href="styles/signup.css" />
+</head>
+
+<body class="center">
+
+   <div class="center">
+      <form>
+         <div class="form-header">
+            <p>Preencha o Fomulário</p>
+         </div>
+
+         <div id="errorMsg"></div>
+         <div id="successMsg"></div>
+
+         <label id="labelName"> Nome: </label>
+         <input type="text" id="nome" />
+
+         <label id="labelNickName"> Sobrenome: </label>
+         <input type="text" id="sobrenome" />
+
+         <label id="labelEmail"> Email: </label>
+         <input type="text" id="email" onkeyup="validateEmail(this)" />
+
+         <label id="labelCpf"> CPF: </label>
+         <input type="text" id="cpf" onkeyup="validateCPF(this)" />
+
+         <label id="labelPassword"> Senha: </label>
+         <input type="password" id="password" />
+
+         <label id="labelRepassword"> Repetir senha: </label>
+         <input type="password" id="password2" />
+
+         <button type="button" onclick="criarUsuario()">Criar conta</button>
+         <div class="ingressar">
+            <a href="index.html">Já possui conta? Acesse aqui</a>
+         </div>
+      </form>
+   </div>
+
+   <!-- ---------------------- lógica aplicada no registro -------------------- -->
+   <script src="./scripts/signupPacient.js"></script>
+</body>
+
+</html>

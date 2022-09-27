@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  Favicon -->   
+   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+   <title>eSmile Login - Login</title>
+
+   <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+   <link rel="stylesheet" href="styles/acesso.css">
+
+   <!-- ---------------------- lógica aplicada no login ----------------------- -->
+   <script src="./scripts/loader.js" defer></script>
+   <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+   <div class="left">
+      <div class="upper">   
+         <img src="./assets/Logo.PNG"alt="">
+      </div>
+      <div class="center">
+         <p class="text-simple">Os melhores e mais modernos tratamentos ortodônticos para o seu sorriso você encontra na <b class="text-highlight">eSmile</b></p>
+      
+         <img src="./assets/Image_Front.JPG" alt="">
+      </div>
+   </div>
+
+   <div class="right">
+      <form>
+         <div class="form-header">
+            <p class="text-highlight" ><b>ENTRAR </b></p>
+         </div>
+         <!-- <h1>Acessar</h1> -->
+         <div id="errorMsg"></div>
+
+         <label id="labelEmail"> Email: </label>
+         <input id="inputEmail" type="text" />
+
+         <label id="labelPassword"> Senha: </label>
+         <input id="inputPassword" type="password" />
+
+         <button type="button" onclick="entrar()">Acessar</button>
+
+         <div class="ingressar">
+            <a href="choose.html">Ainda não é cadastrado? <br> Cadastre-se agora</a>
+         </div>
+      </form>
+   </div>
+</body>
+
+</html>

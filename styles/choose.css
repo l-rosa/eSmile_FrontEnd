@@ -1,0 +1,37 @@
+@import url('./common.css');
+body {
+   display: flex;
+   background-color: white;
+}
+
+.upper {
+    justify-content: left;
+    margin: 3rem 5rem;
+}
+
+.upper img {
+    width: 10rem;
+}
+
+.center {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    padding: 3rem;
+    margin: 1rem;
+    height: auto;
+    border-radius: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.dentista {
+    background-color: var(--primary);
+}
+
+.paciente {
+    background-color: var(--secondary);
+}
